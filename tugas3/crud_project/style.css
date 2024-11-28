@@ -1,0 +1,190 @@
+/* Reset dasar dan pengaturan font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fef8f0; /* Latar belakang lembut krem pastel */
+    color: #3a3a3a; /* Teks utama abu gelap */
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* Putih untuk memberi kontras lembut */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d56d6d; /* Coklat kemerahan untuk heading */
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Form pencarian */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 14px;
+    font-size: 16px;
+    width: 65%;
+    border: 1px solid #f1d4b2; /* Border krem pastel lembut */
+    border-radius: 8px;
+    background-color: #a8d8b9; /* Mint segar */
+    color: #3a3a3a;
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus {
+    outline: none;
+    border-color: #f3a6b3; /* Peach cerah saat fokus */
+    background-color: #ffffff;
+}
+
+.search-form button {
+    padding: 14px 20px;
+    margin-left: 10px;
+    background-color: #f3a6b3; /* Peach cerah */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #e38a7d; /* Peach lebih gelap pada hover */
+}
+
+/* Tabel */
+.table-container {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #f1d4b2;
+}
+
+th {
+    background-color: #f3a6b3; /* Header peach cerah */
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: #a8d8b9; /* Mint segar untuk sel tabel */
+}
+
+tr:hover td {
+    background-color: #eae1cd; /* Efek hover pada baris tabel */
+}
+
+a.btn-edit, a.btn-delete {
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol Edit */
+a.btn-edit {
+    background-color: #ffbf47;
+    color: white;
+}
+
+a.btn-edit:hover {
+    background-color: #eaa039;
+}
+
+/* Tombol Hapus */
+a.btn-delete {
+    background-color: #d64d3a;
+    color: white;
+}
+
+a.btn-delete:hover {
+    background-color: #c1382f;
+}
+
+/* Tombol Tambah Pengguna Baru */
+a.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #f3a6b3; /* Peach cerah */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #e38a7d; /* Peach lebih gelap pada hover */
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 12px 20px;
+    margin: 0 5px;
+    background-color: #f3a6b3; /* Peach cerah */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #e38a7d; /* Peach lebih gelap pada hover */
+}
+
+.pagination a.active {
+    background-color: #d56d6d; /* Coklat gelap untuk item aktif */
+}
+
+.pagination a.disabled {
+    background-color: #d1b8a3; /* Warna lebih pudar untuk tombol disabled */
+    pointer-events: none;
+}
